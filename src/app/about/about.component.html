@@ -1,0 +1,9 @@
+<p>
+  About the person[{{idText}}]<br>
+  Back to <a href="javascript:void(0)" (click)="backHome()">Home</a>
+</p>
+<span>
+  <p *ngFor="let goal of goals; let i = index">
+    <span (click)="remove(i)" title="click to delete">{{goal}}</span>
+  </p> 
+</span>

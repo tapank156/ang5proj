@@ -1,0 +1,12 @@
+<p>
+  Total sentances:: {{itemCount}}
+  <br/>
+  <input type="text" [(ngModel)]="goalText"/>
+  <input type="button" [value]="btnText1" (click)="add()">  
+  <br/>
+  <span>
+    <p *ngFor="let goal of goals; let i = index">
+      <span (click)="clear(i)" title="click to delete">{{goal}}</span>
+    </p> 
+  </span>
+</p>
