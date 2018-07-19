@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
   }
   add() {
     console.log('add');
-    this.goals.push([ this.goalText, this.goals.length ].join('-'));
+    this.goals.push(this.goalText + this.goals.length.toString());
     this.itemCount = this.goals.length;
     this._dataService.changeGoal(this.goals);
   }
